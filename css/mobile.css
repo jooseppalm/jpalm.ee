@@ -1,0 +1,351 @@
+@font-face {
+    src: url(../fonts/OratorStd.otf);
+    font-family: orator;
+}
+
+@font-face {
+    src: url(../fonts/beaufort.ttf);
+    font-family: beaufort;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F4F4F4;
+    z-index: 2147483647;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.pico{
+    height: 10vw;
+}
+.nav-link {
+    color: #959A42;
+}
+
+.header {
+    background-color: #D9D7CA;
+}
+
+body {
+    background-color: #EAEEE0;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 70vw;
+    width: 150vw;
+    min-height: 25vw;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container-h {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.header-subtitle {
+    font-size: 3vw;
+    line-height: 50px;
+    font-family: orator;
+    color: #D3D457;
+    margin-left: 6%;
+}
+
+.video-logo-overlay{
+    margin-top: 10%;
+    width: 60%;
+    margin-left: 4%;
+}
+
+.text-media {
+
+}
+
+.col-right {
+}
+
+.shadowed {
+    filter: drop-shadow(-5px 5px 10px #222);
+    height: 50vw;
+}
+
+.text-middle-big {
+    text-align: right;
+    margin-top: 15vw;
+    margin-left: 7vw;
+    font-size: 3vw;
+    font-family: orator;
+}
+
+.why {
+    margin-top: 0px;
+}
+
+.bg-img-map {
+    /* The image used */
+    background-image: url(../images/map.jpg);
+
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    z-index: -1;
+    margin-left: 5vw;
+    margin-top: 0vw;
+
+    
+}
+
+.small-box-video {
+    height: 52vw;
+    margin-left:10%;
+    margin-top: 10vw;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url(../images/bg_triple.jpg);
+
+    /* Full height */
+    height: 170vw;
+
+    /* Center and scale the image nicely */
+    margin-top: 10vw;
+    z-index: -999;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.maakond-img-bg {
+    background-image: url(../images/maakonnad.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+}
+
+.myyad {
+    width: 100%;
+}
+.myyad-text{
+    margin-left: 1vw;
+    padding-top: 3vw;
+    font-size: 4vw;
+    text-align: left;
+    font-family: orator;
+    color: white;
+}
+
+.mapm {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+.map {
+    overflow: hidden;
+    padding-bottom: 70.25%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.margin {
+    margin-top: 15vw;
+}
+
+
+.triple-box-video {
+    height: 40vw;
+    margin-left: 15%;
+}
+
+.turg {
+    padding-top: 2vw;
+    height: 45vw;
+    float: right;
+}
+
+.s-text-1 {
+    margin-top: 2vw;
+    font-size: 3vw;
+    margin-left: 8vw;
+    font-family: orator;
+    color: white;
+}
+
+.s-text-2 {
+    margin-top: 2vw;
+    font-size: 3vw;
+    margin-left: 17vw;
+    font-family: orator;
+    color: white;
+}
+
+.s-text-3 {
+    margin-top: 2vw;
+    font-size: 3vw;
+    font-family: orator;
+    color: white;
+    text-align: center;
+}
+
+.s-text-l {
+    margin-left: 2vw;
+    font-size: 3vw;
+    text-align: left;
+    font-family: orator;
+    color: #E89088;
+}
+
+.banner-video-box {
+    width: 100%;
+}
+
+.buttons {
+    padding-left: 5vw;
+}
+
+img {
+    display: block;
+}
+
+.adr {
+    width: 92%;
+    padding-left: 10vw;
+}
+
+.contact-buttons-phone-mail {
+    padding-top: 5vw;
+    padding-left: 6vw;
+    padding-bottom: 3vw;
+    width: 103%;
+}
+
+.contact-buttons-adr-img {}
+
+.contact-buttons-mail-img {}
+
+.contact-buttons-phone-img {}
+
+
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate( -50%, -50% );
+}
+
+.adr-text {
+    padding-top: 10vw;
+    font-size: 5vw;
+    text-align: left;
+    font-family: orator;
+    color: white;
+    padding-bottom: 0px;
+    line-height: 2vw;
+}
+
+.adr-text-s {
+    font-size: 4vw;
+    text-align: left;
+    font-family: orator;
+    color: white;
+    line-height: 3vw;
+}
+
+.contact-text-form{
+    padding-top: 30vw;
+    padding-left: 8vw;
+    font-family: orator;
+}
+
+.k-h{
+    font-size: 5vw;
+}
+
+.k-t{
+    font-size: 4vw;
+}
+
+.bg-c{
+    background-image: url(../images/audo-t.png);
+    background-position: right;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+}
+.height-c{
+    height: 100vw;
+    }
+
+.footer-size {
+    height: 10vw;
+    background-color: #959A42;
+}
+
+.social {
+    padding-left: 1%;
+    padding-top: 1%;
+    width: 8%;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url(../images/maasikad.jpg) black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}

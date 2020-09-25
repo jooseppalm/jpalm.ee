@@ -1,0 +1,319 @@
+@font-face {
+    src: url(../fonts/OratorStd.otf);
+    font-family: orator;
+}
+
+@font-face {
+    src: url(../fonts/beaufort.ttf);
+    font-family: beaufort;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F4F4F4;
+    z-index: 2147483647;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    color: #959A42;
+}
+
+.header {
+    background-color: #D9D7CA;
+}
+
+body {
+    background-color: #EAEEE0;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 45vw;
+    min-height: 25vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container-h {
+    position: relative;
+    z-index: 2;
+}
+
+.pico {
+    height: 5vw;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.header-subtitle {
+    font-size: 1.5vw;
+    line-height: 50px;
+    font-family: orator;
+    color: #D3D457;
+}
+
+.text-media {
+    height: 30vw;
+    width: 100%;
+}
+
+.col-right {
+    margin-right: 15vw;
+}
+
+.shadowed {
+    filter: drop-shadow(-5px 5px 10px #222);
+    width: 200px;
+    height: 220px;
+}
+
+.text-middle-big {
+    text-align: right;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    font-size: 2vw;
+    font-family: orator;
+}
+
+.why {
+    margin-top: 0px;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url(../images/bg_triple.jpg);
+
+    /* Full height */
+    height: 35vw;
+
+    /* Center and scale the image nicely */
+    margin-top: 0vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-map {
+    /* The image used */
+    background-image: url(../images/map.jpg);
+
+    /* Full height */
+    height: 30vw;
+
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.maakond-img-bg {
+    background-image: url(../images/maakonnad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.myyad-text {
+    padding-top: 3vw;
+    font-size: 3vw;
+    text-align: left;
+    font-family: orator;
+    color: white;
+}
+
+.mapm {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+.map {
+    overflow: hidden;
+    padding-bottom: 70.25%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.contact-buttons-phone-mail {
+    padding-top: 3vw;
+    padding-left: 1vw;
+    width: 107%;
+}
+
+.contact-buttons-adr-img {}
+
+.contact-buttons-mail-img {}
+
+.contact-buttons-phone-img {}
+
+
+
+.small-box-video {
+    height: 30vw;
+}
+
+.triple-box-video {
+    height: 17vw;
+    margin-top: 4vw;
+    margin-left: 1vw;
+}
+
+.turg {
+    height: 30vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+}
+
+.s-text {
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: orator;
+    color: white;
+}
+
+.s-text-l {
+    font-size: 1.5vw;
+    text-align: left;
+    font-family: orator;
+    color: #E89088;
+}
+
+.banner-video-box {
+    width: 100%;
+}
+
+.buttons {
+    padding-left: 5vw;
+}
+
+img {
+    display: block;
+}
+
+.adr {
+    width: 90%;
+    padding-left: 4vw;
+}
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.caption {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.adr-text {
+    padding-top: 1vw;
+    font-size: 3vw;
+    text-align: left;
+    font-family: orator;
+    color: white;
+    line-height: 1vw;
+
+}
+
+.adr-text-s {
+    padding-top: 0vw;
+    font-size: 1vw;
+    text-align: left;
+    font-family: orator;
+    color: white;
+    line-height: 1vw;
+}
+
+.left-side {
+    background-image: url(../images/audo-t.png);
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contact-text-form {
+    padding-top: 5vw;
+    padding-left: 2vw;
+    font-family: orator;
+}
+
+.k-h {
+    font-size: 4vw;
+}
+
+.k-t {
+    font-size: 2vw;
+}
+
+.footer-size {
+    height: 5vw;
+    background-color: #959A42;
+}
+
+.social {
+    padding-left: 1%;
+    padding-top: 1%;
+    width: 4%;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url(../images/maasikad.jpg) black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}

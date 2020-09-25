@@ -7,7 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../margusetalu.ee/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/narrow.css">
+    <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="css/wide.css">
+    <script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+//-->
+</script>
+    
 
     <title>MarguseTalu</title>
 </head>
@@ -16,7 +26,7 @@
     <div class="header" id="myHeader">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
-                <img src="../margusetalu.ee/images/margusetalu_logo.png" width="75" height="75" alt="" loading="lazy">
+                <img class="pico" src="/images/margusetalu_logo.png" alt="" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,10 +37,10 @@
                         <a class="nav-link" style="margin-right: 50px" href="#">AVALEHT <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="margin-right: 50px;margin-left: 50px" href="#">MEIST</a>
+                        <a class="nav-link" style="margin-right: 50px;margin-left: 50px" href="#meist">MEIST</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="margin-right: 50px;margin-left: 50px" href="#">KONTAKT</a>
+                        <a class="nav-link" style="margin-right: 50px;margin-left: 50px" href="#kontakt">KONTAKT</a>
                     </li>
                 </ul>
             </div>
@@ -59,30 +69,33 @@
 
 
         <div class="overlay"></div>
-        <video class="banner-video-box" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="images/ff.jpg">
-            <source src="../margusetalu.ee/video/banner_1.mp4" type="video/mp4">
+        <video class="banner-video-box" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="/video/banner_2.mp4" type="video/mp4">
 
         </video>
+
         <div class="container container-h h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <div class="video-logo-overlay"><img src="../margusetalu.ee/images/margusetalu_2.png" class="img-fluid" alt=""></div>
-                    <p class="header-subtitle">KÕRGEMA KVALITEEDI MAASIKA KASVATUS EESTIS </p>
+                    <div class="video-logo-overlay"><img src="/images/margusetalu_2.png" class="img-fluid" alt=""></div>
+                    <p class="header-subtitle">KÕRGEMA KVALITEEDIGA MAASIKATE KASVATUS EESTIS </p>
                 </div>
             </div>
         </div>
 
     </header>
+
+    <div id="meist"></div>
+
     <div class="text-media">
         <div class="row">
             <div class="col bg-img-map">
                 <p class="text-middle-big">
                     Marguse Talu asub Lääne-Virumaal, Vao külas.</p>
-
             </div>
             <div class="col shadowed col-right">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="small-box-video">
-                    <source src="../margusetalu.ee/video/d1.mov" type="video/mp4">
+                <video playsinline="playsinline" muted="muted" loop="loop" class="small-box-video">
+                    <source src="/video/p6ld.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -93,21 +106,21 @@
 
             <div class="col">
                 <video playsinline="playsinline" muted="muted" loop="loop" class="triple-box-video">
-                    <source src="../margusetalu.ee/video/masin.mov" type="video/mp4">
+                    <source src="/video/korjus_1.mp4" type="video/mp4">
                 </video>
-                <p class="s-text">Valmistame ise päikeseenergial töötavaid masinaid.</p>
+                <p class="s-text">Valmistame ise päikeseenergial töötavaid masinaid</p>
             </div>
             <div class="col">
                 <video playsinline="playsinline" muted="muted" loop="loop" class="triple-box-video">
-                    <source src="../margusetalu.ee/video/taim.mov" type="video/mp4">
+                    <source src="/video/maasikad.mp4" type="video/mp4">
                 </video>
-                <p class="s-text">Müüme oma toodangut edasimüüjate kaudu.</p>
+                <p class="s-text">Müüme oma toodangut edasimüüjate kaudu</p>
             </div>
             <div class="col">
                 <video playsinline="playsinline" muted="muted" loop="loop" class="triple-box-video">
-                    <source src="../margusetalu.ee/video/kr.mov" type="video/mp4">
+                    <source src="/video/kylm.mp4" type="video/mp4">
                 </video>
-                <p class="s-text">Külmruum tagab maasikate värskuse kuni need jõuavad klientideni.</p>
+                <p class="s-text">Külmhoone tagab maasikate värskuse kuni need jõuavad klientideni</p>
             </div>
         </div>
     </div>
@@ -115,12 +128,12 @@
     <div class="maakond-img-bg">
         <div class="myyad">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-4">
                     <video playsinline="playsinline" muted="muted" loop="loop" class="turg">
-                    <source src="../margusetalu.ee/video/turg.mov" type="video/mp4">
-                </video>
+                        <source src="/video/turg.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-8">
                     <p class="myyad-text">Meie toodangut saab osta edasimüüjate kaudu</p>
                     <p class="s-text-l">TALLINNAS</p>
                     <p class="s-text-l">RAKVERES</p>
@@ -129,26 +142,36 @@
             </div>
         </div>
     </div>
+    <div id="kontakt"></div>
 
-    <div class="mapm">
-        <div class="row">
-            <div class="col-sm-6 map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8194.598661458538!2d26.1855282!3d59.1047969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3f613eb74595a3a!2sKortexo%20O%C3%9C!5e0!3m2!1set!2see!4v1596552764931!5m2!1set!2see" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="row">
+        <div class="col">
+            <div class="mapm">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8194.598661458538!2d26.1855282!3d59.1047969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3f613eb74595a3a!2sKortexo%20O%C3%9C!5e0!3m2!1set!2see!4v1596552764931!5m2!1set!2see" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
-            <div class="col-sm-6 buttons">
-                <div id="row contact-buttons-adr box-search">
-                    <div class="thumbnail">
-                        <img class="adr" src="images/aadress.png" style="" alt="">
-                        <div class="caption">
-                            <p class="adr-text">MARGUSE TALU</p>
-                            <p class="adr-text-s">Vao Küla, Lääne-Virumaa</p>
-                        </div>
+            <div class="row">
+                <div class="thumbnail">
+                    <img class="adr" src="images/aadress.png" style="" alt="">
+                    <div class="caption">
+                        <p class="adr-text">MARGUSE TALU</p>
+                        <p class="adr-text-s">Vao Küla, Lääne-Virumaa</p>
                     </div>
                 </div>
-                <div class="row contact-buttons-phone-mail">
-                    <div class="col-sm-6"><a href="tel:+37255596369"><img src="images/phone.png" class="img-fluid" alt=""></a></div>
-                    <div class="col-sm-6"><a href="mailto:margusbeilmann"><img src="images/mail.png" class="img-fluid" alt=""></a></div>
-                </div>
+            </div>
+            <div class="row contact-buttons-phone-mail">
+                <div class="col"><a href="tel:+37255596369"><img src="images/phone.png" class="img-fluid" alt=""></a></div>
+                <div class="col"><a href="mailto:margus.beilmann@mail.ee"><img src="images/mail.png" class="img-fluid" alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="col left-side">
+            <div class="contact-text-form">
+                <p class="k-h">KONTAKTANDMED:</p>
+                <p class="k-t">margus.beilmann @ mail.ee</p>
+                <p class="k-t">+372 5342 6192</p>
+
             </div>
         </div>
     </div>
@@ -156,7 +179,13 @@
 
 
     <footer>
-        <div class="footer-size"></div>
+        <div class="row footer-size">
+           <div class="col-sm-12">
+            <div class="social">
+                <a href="https://www.facebook.com/margusetalu"><img src="images/fb.png" class="img-fluid" title="FB" alt="FACEBOOK"></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -166,7 +195,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/navbar_stick.js"></script>
 </body>
 
 </html>
